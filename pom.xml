@@ -27,8 +27,10 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>2.1</version>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.2.0</version> 
+                <!--<artifactId>maven-shade-plugin</artifactId>
+                <version>2.1</version> -->
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -46,11 +48,5 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-clean-plugin</artifactId>
-      <version>3.2.0</version> <!-- Change the version to an available one -->
-    </plugin>
-        </plugins>
     </build>
 </project>
